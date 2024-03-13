@@ -1,6 +1,5 @@
 app:
   datasource:
-    #jdbc-url: jdbc:postgresql://127.0.0.1:5432/demodb
-    jdbc-url: jdbc:postgresql://database/demodb
+    jdbc-url: jdbc:postgresql://127.0.0.1:5432/demodb
     username: postgres
     password: Branajay

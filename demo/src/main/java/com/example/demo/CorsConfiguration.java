@@ -13,8 +13,8 @@ public class CorsConfiguration {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                 registry.addMapping("/api/**")
-                 //registry.addMapping("/**") // Adjust the mapping pattern as needed
+                 //registry.addMapping("/api/**")
+                 registry.addMapping("/**") // Adjust the mapping pattern as needed
                         .allowedOrigins("frontend") // Add your frontend origin here
                         .allowedMethods("GET", "POST", "PUT", "DELETE") // Add allowed HTTP methods
                         .allowedHeaders("*"); // Allow all headers
