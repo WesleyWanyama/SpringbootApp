@@ -4,7 +4,7 @@
 docker login
 
 #Tag the image
-docker tag spring-backend:v1 wesley3015/spring-backend:v1
+docker tag spring-backend:v2 wesley3015/spring-backend:v2
 
 #Push the image
-docker push wesley3015/spring-backend:v1
+docker push wesley3015/spring-backend:v2
