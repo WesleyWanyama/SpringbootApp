@@ -10,7 +10,7 @@ import java.util.UUID;
 
 @RequestMapping("api/v1/person")
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "frontend")
 public class PersonController {
 
     private final PersonService personService;
