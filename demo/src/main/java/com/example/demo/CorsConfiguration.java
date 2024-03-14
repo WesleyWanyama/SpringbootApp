@@ -15,7 +15,7 @@ public class CorsConfiguration {
             public void addCorsMappings(CorsRegistry registry) {
                  //registry.addMapping("/api/**")
                  registry.addMapping("/**") // Adjust the mapping pattern as needed
-                        .allowedOrigins("http://localhost:3000") // Add your frontend origin here
+                        .allowedOrigins("http://frontend:3000") // Add your frontend origin here
                         .allowedMethods("GET", "POST", "PUT", "DELETE") // Add allowed HTTP methods
                         .allowedHeaders("*"); // Allow all headers
             }
