@@ -15,6 +15,7 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>21</java.version>
+		<DB_HOST>localhost</DB_HOST>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -64,6 +65,36 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+				<includes>
+					<include>**/*.yml</include>
+				</includes>
+			</resource>
+		</resources>
 	</build>
+
+	<!--<profiles>
+		<profile>
+			<id>local</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				Define local properties
+				<DB_HOST>localhost</DB_HOST>
+			</properties>
+		</profile>
+		<profile>
+			<id>docker</id>
+			<properties>
+				Define Docker properties
+				<DB_HOST>database</DB_HOST>
+			</properties>
+		</profile>
+	</profiles>-->
+
 
 </project>
